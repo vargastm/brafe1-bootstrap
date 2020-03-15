@@ -25,16 +25,34 @@ body {
 	font-size: 1.125em;
 }
 
+.menu-nav ul {
+  float: right;
+  list-style: none;
+}
+
+.menu-nav ul li {
+  display: inline-block
+}
+
+.menu-nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+}
+
 /* Introduction */
 .introduction {
 	background: url('../images/bg-intro.jpg') no-repeat center center;
 	background-size: cover;
   color: #FFFFFF;
+  padding: 150px 0;
+  text-align: center;
 }
 
 .introduction h1 {
 	text-transform: uppercase;
-	font-size: 3em;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 .introduction h1::after {
@@ -43,6 +61,7 @@ body {
 	width: 20px;
 	height: 4px;
   background: #FFFFFF;
+  margin: 20px auto
 }
 
 .introduction p {
@@ -57,7 +76,9 @@ body {
 
 .about h2 {
   font-size: 2.25em;
-
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: bold;
 }
 
 .about-item img {
@@ -92,11 +113,20 @@ body {
 .products {
 	background: #E7E4D8;
 	border-top: 3px solid #D6D3C8;
-	border-bottom: 3px solid #D6D3C8;
+  border-bottom: 3px solid #D6D3C8;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products-item {
+  margin-bottom: 40px;
 }
 
 .products-item h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .products-item h2::before {
@@ -107,7 +137,8 @@ body {
 	background: currentColor;
 	border-radius: 50%;
 	border: 5px solid #E7E4D8;
-	box-shadow: 0 0 0 5px currentColor;
+  box-shadow: 0 0 0 5px currentColor;
+  margin: 20px auto;
 }
 
 h2.products-paulista::before {
@@ -134,17 +165,40 @@ h2.products-mineiro::before {
 	text-align: center;
 	font-size: 1.125em;
 	font-weight: bold;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  width: 180px;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 15px 0;
+}
+
+.products-button:hover {
+  text-decoration: none;
+  color: #C17139;
+  border-color: #C17139;
 }
 
 /* Locations */
+.locations {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.location-item {
+  margin-bottom: 40px;
+}
+
 .location-item h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .location-item p {
 	font-size: 1.125em;
-	line-height: 1.4em;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 20px;
 }
 
 .location-item a {
@@ -152,7 +206,8 @@ h2.products-mineiro::before {
 	text-transform: uppercase;
 	text-decoration: none;
 	border: 3px solid;
-	color: #252525;
+  color: #252525;
+  padding: 10px 20px;
 }
 
 /* Newsletter */
@@ -199,4 +254,19 @@ h2.products-mineiro::before {
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+}
+
+@media (max-width: 768px) {
+  .menu-nav ul {
+    float: none;
+  }
+
+  .menu-nav ul li a {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .introduction {
+    padding: 60px 0;
+  }
 }
