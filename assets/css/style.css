@@ -71,7 +71,8 @@ body {
 
 /* About */
 .about {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .about h2 {
@@ -188,6 +189,11 @@ h2.products-mineiro::before {
   margin-bottom: 40px;
 }
 
+.location-item img {
+    display: block;
+    max-width: 100%;
+}
+
 .location-item h2 {
   font-size: 2.25em;
   margin-bottom: 20px;
@@ -212,11 +218,14 @@ h2.products-mineiro::before {
 
 /* Newsletter */
 .newsletter {
-	background: #E7E4D8;
+  background: #E7E4D8;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .newsletter-info h2 {
-	font-size: 2.25em;
+  font-size: 2.25em;
+  font-weight: bold;
 }
 
 .newsletter-info p {
@@ -228,12 +237,21 @@ h2.products-mineiro::before {
 	display: none;
 }
 
+.newsletter form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
 .newsletter input {
 	border: 3px solid #252525;
 	background: none;
 	font-size: 1.5em;
 	font-style: italic;
-	font-family: Georgia, serif;
+  font-family: Georgia, serif;
+  align-self: flex-start;
+  padding: 10px;
 }
 
 .newsletter button {
@@ -243,17 +261,25 @@ h2.products-mineiro::before {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	color: #FFFFFF;
-	cursor: pointer;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 13px;
 }
 
 /*Footer*/
 .footer {
-	background: #D6D3C8;
+  background: #D6D3C8;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer p {
 	font-size: 1.125em;
 	line-height: 1.4em;
+}
+
+.footer img {
+  float: right;
 }
 
 @media (max-width: 768px) {
@@ -268,5 +294,10 @@ h2.products-mineiro::before {
 
   .introduction {
     padding: 60px 0;
+  }
+
+  .footer img {
+    float: none;
+    margin-top: 20px;
   }
 }
